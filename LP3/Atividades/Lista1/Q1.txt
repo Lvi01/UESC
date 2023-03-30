@@ -1,0 +1,42 @@
+Operadores em Java:
+
+Os operadores em Java seguem uma ordem de prioriade, assim como em outras linguagens.
+Essa ordem é:
+1. () parênteses para agrupamento de expressões;
+2. !, ~, ++, --, +, - negação lógica, negação bit-a-bit, pré/pós-incremento/decremento, sinal positivo/negativo;
+3. *, /, % multiplicação, divisão, resto da divisão;
+4. +, - soma, subtração;
+5. <<, >>, >>> shift bit-a-bit à esquerda, shift bit-a-bit à direita com extensão de sinal, shift bit-a-bit à direita sem extensão de sinal;
+6. <, <=, >, >= menor que, menor ou igual a, maior que, maior;
+7. ==, != igualdade, desigualdade;
+8. & and bit-a-bit;
+9. ^ xor bit-a-bit;
+10. | or bit-a-bit;
+11. && and lógico curto-circuito;
+12. || or lógico curto-circuito;
+13. ? : operador ternário de condicional;
+
+Assim, Quando duas ou mais operações com a mesma precedência são realizadas em uma expressão, a ordem de execução depende da associatividade do operador. 
+A maioria dos operadores em Java são associativos da esquerda para a direita, ou seja, operações do mesmo nível de precedência são resolvidas da esquerda para a direita. 
+O operador de atribuição (=) é associativo da direita para a esquerda, o que significa que as expressões ao redor do sinal de atribuição são sempre executadas primeiro.
+
+Operador condicional em Java:
+
+O operador condicional (ternário) em Java é representado pelo símbolo "?:". 
+É um operador que permite a criação de uma expressão condicional em apenas uma linha de código, sendo possível avaliar uma condição e retornar um valor de acordo com essa condição.
+A sintaxe do operador condicional é a seguinte:
+
+(condição) ? valor_true : valor_false;
+
+Onde:
+(condição) é a condição que será testada;
+valor_true é o valor que será retornado caso a condição seja verdadeira;
+valor_false é o valor que será retornado caso a condição seja falsa.
+
+Por exemplo, suponha que queremos verificar se um número é par ou ímpar e atribuir uma mensagem correspondente a essa informação. 
+Podemos usar o operador condicional para fazer isso em uma única linha de código:
+
+String mensagem = (numero % 2 == 0) ? "Número par" : "Número ímpar";
+
+Nesse caso, a condição (numero % 2 == 0) é testada e, caso seja verdadeira, a mensagem "Número par" é atribuída à variável mensagem. 
+Caso contrário, a mensagem "Número ímpar" é atribuída.
