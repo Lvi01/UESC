@@ -1,6 +1,6 @@
-//Levi Silva Freitas 202210351
-//Eduardo Oliveira Freire 202210343  
-//Rafael do Nascimento Pedreira 202210360
+//Levi Silva Freitas 
+//Eduardo Oliveira Freire 
+//Rafael do Nascimento Pedreira 
 
 //Prática 00: B - Exemplo
 
