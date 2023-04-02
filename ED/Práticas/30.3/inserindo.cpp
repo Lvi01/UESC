@@ -1,6 +1,6 @@
 /*
-Eduardo Oliveira freire 202210343
-Rafael do Nascimento Pedreira 202210360
+Eduardo Oliveira freire 
+Rafael do Nascimento Pedreira 
 Levi Silva Freitas
 */
 #include <bits/stdc++.h>
