@@ -1,0 +1,32 @@
+modelo LampadaTresEstados
+
+inicio do modelo
+    dado modeloDaLampada;
+    dado precoDaLamapada;
+    dado estadoDaLampada;
+
+    operacao liga(dado forca)
+        inicio
+            estadoDaLampada = forca;
+        fim
+
+
+
+    operacao mostrarEstado()
+        inicio
+            se (estadoDaLampada == 100)
+                imprime "A lampada esta acesa";
+            senao se (estadoDaLampada == 0)
+                imprime "A lampada esta apagada";
+            senao
+                imprime "A lampada esta em meia luz";
+        fim
+    operacao preco()
+        inicio
+            return precoDaLamapada()
+        fim
+    operacao modelo()
+        inicio
+            return modeloDaLampada();
+        fim
+fim do modelo

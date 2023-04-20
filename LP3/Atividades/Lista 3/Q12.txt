@@ -1,0 +1,13 @@
+modelo Ponto2D
+inicio do modelo
+    dado x1, y1;
+
+    operacao pegaPontos(valorX1, valorY1)
+            x1 = valorX1;
+            y1 = valorY1;
+        fim
+    operacao imprimePonto()
+        inicio
+            imprime "Ponto: ("; imprime x1; imprime ","; imprime y1; imprime ")";
+        fim
+fim do modelo

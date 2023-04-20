@@ -1,0 +1,31 @@
+modelo Lampada
+
+inicio do modelo
+    dado modeloDaLampada;
+    dado precoDaLamapada;
+    dado estadoDaLampada;
+
+    operacao acende()
+        inicio
+            estadoDaLampada = acesso;
+        fim
+    operacao apaga()
+        inicio
+            estadoDaLampada = apagado;
+        fim
+    operacao mostrarEstado()
+        inicio
+            se (estadoDaLampada == aceso)
+                imprime "A lampada esta acesa";
+            senao
+                imprime "A lampada esta apagada";
+        fim
+    operacao preco()
+        inicio
+            return precoDaLamapada()
+        fim
+    operacao modelo()
+        inicio
+            return modeloDaLampada();
+        fim
+fim do modelo

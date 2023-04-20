@@ -1,0 +1,31 @@
+modelo LivroDeLivraria
+
+inicio do modelo
+    dado paginas, autor, editora, quantidade, preco;
+
+    operacao quantasPaginas()
+        inicio
+            return paginas;
+        fim
+    operacao qualOAutor()
+        inicio
+            return autor;
+        fim
+    operacao qualAEditora()
+        inicio
+            return editora;
+        fim
+    operacao vender()
+        inicio
+            se (quantidade>0) {
+                quantidade--;
+                return true;
+            }
+            senao return false;
+        fim
+    operacao preco()
+        inicio
+            return preco;
+        fim
+
+fim do modelo

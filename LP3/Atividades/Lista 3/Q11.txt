@@ -1,0 +1,41 @@
+modelo LivroDeLivraria
+//basicamente a diferenca dos modelos se encontra na essencia entre vender e emprestar;
+//na venda é importante guardar o preco do livro para adicionar a receita enquanto ao emprestrar é importante manter a quantidade disponivel atualizada;
+
+inicio do modelo
+    dado paginas, autor, editora, quantidade;
+
+    operacao quantasPaginas()
+        inicio
+            return paginas;
+        fim
+    operacao qualOAutor()
+        inicio
+            return autor;
+        fim
+    operacao qualAEditora()
+        inicio
+            return editora;
+        fim
+    operacao emprestar()
+        inicio
+            se (quantidade>0) {
+                imprime "O livro pode ser emprestado";
+                quantidade--;
+                return true;
+            }
+            senao{
+                imprime "Todos os exemplares ja foram emprestados";
+                return false;
+            } 
+        fim
+    operacao devolver()
+        inicio
+            quantidade++;
+        fim
+    operacao preco()
+        inicio
+            return preco;
+        fim
+
+fim do modelo

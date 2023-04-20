@@ -1,0 +1,17 @@
+modelo Livro
+inicio do modelo
+    dado paginas, autor, editora;
+
+    operacao quantasPaginas()
+        inicio
+            return paginas;
+        fim
+    operacao qualOAutor()
+        inicio
+            return autor;
+        fim
+    operacao qualAEditora()
+        inicio
+            return editora;
+        fim
+fim do modelo

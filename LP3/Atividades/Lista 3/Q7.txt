@@ -1,0 +1,34 @@
+modelo HoraAproximada
+inicio do modelo
+    dado horas, minutos, segundos;
+
+    operacao inicializaHora(hora, minuto, segundo)
+        inicio
+            se horaEValida(hora, minuto, segundo)
+                inicio
+                    horas = hora;
+                    minutos = minuto;
+                    segundos = segundo;
+                fim
+            senao{
+                horas = 0;
+                minutos = 0;
+                segundos = 0;
+            }
+        fim
+    operacao horaEValida(umDia, umMes, umAno)
+        inicio
+            se((hora>=0) e (hora<=24) e (minuto>=0) e (minuto<=60) e (segundo>=0) e (segundo>=60))
+                retorn true;
+            senao
+                return false;
+        fim
+    operacao mostraHora()
+        inicio
+            imprime horas;
+            imprime ":";
+            imprime minutos;
+            imprime ":";
+            imprime segundos;
+        fim
+fim do modelo

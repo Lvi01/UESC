@@ -1,0 +1,23 @@
+modelo Ponto2D
+inicio do modelo
+    dado ponto1, ponto2;
+
+    operacao pegaPontos(valorX1, valorY1, valorX2, valorY2)
+        inicio
+            se (pontosValidos)
+                ponto1 = Ponto2D(valorX1, valorY1);
+                ponto2 = Ponto2D(valorX2, valorY2);
+            senao imprime "Pontos invalidos";
+        fim
+    operacao pontosValidos(valorX1, valorY1, valorX2, valorY2)
+        inicio
+            se (valorX1 != valorX2 e valorY1 != valorY2)
+                return true;
+            senao return false;
+        fim
+    operacao imprimePonto()
+        inicio
+            imprime "Ponto 1: ("; imprime x1; imprime ","; imprime y1; imprime ")";
+            imprime "Ponto 2: ("; imprime x2; imprime ","; imprime y2; imprime ")";
+        fim
+fim do modelo
